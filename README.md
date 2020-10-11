@@ -16,6 +16,7 @@ Jupyter Notebook reanalysing Yokota et al.
 * Plots.jl ver. 0.27.0
 * RCall.jl ver. 0.13.4
 * R ver. 3.6.1
+* {synchrony} ver. 0.3.8
 * IJulia.jl ver. 1.20.0
 * Python ver. 3.7.4
 * Jupyter Notebook ver. 4.5.0
