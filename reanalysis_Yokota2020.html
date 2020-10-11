@@ -13112,22 +13112,19 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>Under the assumption that the nasopharyngeal swab (NSP) and saliva tests are independent, the likelihood function assuming multinomial sampling is obtained as
+<p>Under the assumption that the nasopharyngeal swab (NSP) and saliva tests are independent, the likelihood function assuming multinomial sampling is obtained as</p>
 $$
 L_i\propto q_{A_i}^{A_i}q_{B_i}^{B_i}q_{C_i}^{C_i}q_{D_i}^{D_i},
-$$
-where
+$$<p>where</p>
 $$
 q_{A_i}=p_iSe_NSe_S+(1-p_i)(1-Sp_N)(1-Sp_S),\\
 q_{B_i}=p_iSe_N(1-Se_S)+(1-p_i)(1-Sp_N)Sp_S,\\
 q_{C_i}=p_i(1-Se_N)Se_S+(1-p_i)Sp_N(1-Sp_S),\\
 q_{D_i}=p_i(1-Se_N)(1-Se_S)+(1-p_i)Sp_NSp_S,
-$$
-and we get the posterior distribution of parameters $\theta=(Se_N,Se_S,Sp_N,Sp_S,p_1,p_2)$ as
+$$<p>and we get the posterior distribution of parameters $\theta=(Se_N,Se_S,Sp_N,Sp_S,p_1,p_2)$ as</p>
 $$
 p(\theta| D_1, D_2)\propto p(\theta)L_1L_2
-$$
-where $p(\theta)$ represents the product of prior distributions. Markov-chain Monte Carlo (MCMC) was used to sample posterior distributions.</p>
+$$<p>where $p(\theta)$ represents the product of prior distributions. Markov-chain Monte Carlo (MCMC) was used to sample posterior distributions.</p>
 <h2 id="Replication-results">Replication results<a class="anchor-link" href="#Replication-results">&#182;</a></h2>
 </div>
 </div>
@@ -13264,12 +13261,11 @@ llvalue -171.3142131403 -167.6597561138 -166.3250079018 -165.30167828 -164.07182
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We obtained the sensitivity estimates of 86% for NSP (95% credible interval: 75-94%) and 92% (95% CrI: 81-98%), consistent with Yokota et al. Note that 90% CrIs were reported instead of 95% CrIs in the original paper.</p>
-<p>On the other hand, the PAR, the proportion testing positive among those testing positive for the reference test, is given as follows. Let $T_N$ be the PAR of NPS referencing saliva and $T_S$ vice versa. The likelihood of $T_N$ and $T_S$ are given as
+<p>On the other hand, the PAR, the proportion testing positive among those testing positive for the reference test, is given as follows. Let $T_N$ be the PAR of NPS referencing saliva and $T_S$ vice versa. The likelihood of $T_N$ and $T_S$ are given as</p>
 $$
 L_N(T_N)\propto T_N^{A_1}{(1-T_N)}^{C_1}T_N^{A_2}{(1-T_N)}^{C_2} \\
 L_N(T_S)\propto T_S^{A_1}{(1-T_S)}^{B_1}T_S^{A_2}{(1-T_S)}^{B_2}
-$$
-and can simply be sampled from beta distributions $Beta(\sum A_i+1,\sum C_i+1)$ and $Beta(\sum A_i+1,\sum B_i+1)$, respectively.</p>
+$$<p>and can simply be sampled from beta distributions $Beta(\sum A_i+1,\sum C_i+1)$ and $Beta(\sum A_i+1,\sum B_i+1)$, respectively.</p>
 <p>The estimated sensitivity values and PARs had almost identical distribution, which suggests that the sensitivity estimates were almost exclusively informed by the reference positive data; i.e. the sensitivity of NPS was estimated from saliva positive data, and vice versa. Reference negative data was barely informative because the negative samples among them (i.e. negative/negative samples) could also be true negatives (noninfecteds). Since the prevalence $p$ was treated as unknown and freely estimated, any data could have been consistent with the PAR estimated from the reference positive data, thereby not contributing estimation of sensitivity.</p>
 
 </div>
