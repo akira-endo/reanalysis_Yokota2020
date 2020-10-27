@@ -1,12 +1,12 @@
 # Reanalysis of PCR sensitivity estimation in Yokota et al. (2020)
 Source code accompanying a Letter to the Editor: correspondence to Yokota et al. "Mass screening of asymptomatic persons for SARS-CoV-2 using saliva". [https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciaa1388/5911780](https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciaa1388/5911780)
 
-The letter has been accepted for publication in *Clinical Infectious Diseases* Published by Oxford University Press.
+The letter has been accepted for publication in *Clinical Infectious Diseases* Published by Oxford University Press [(doi:10.1093/cid/ciaa1656)](https://doi.org/10.1093/cid/ciaa1656).
 
 ## Main files
 * reanalysis_Yokota2020.ipynb/[.html](https://akira-endo.github.io/reanalysis_Yokota2020/reanalysis_Yokota2020.html):
 Jupyter Notebook reanalysing Yokota et al.
-* Letter_to_the_Editor.pdf:
+* Letter_to_the_Editor[.pdf](https://akira-endo.github.io/reanalysis_Yokota2020/Letter_to_the_Editor.pdf):
 Manuscript PDF.
 
 ## Licence
